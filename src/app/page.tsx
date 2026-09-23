@@ -1,13 +1,30 @@
+import Banner from '@/components/homepage/Banner';
 import React from 'react';
+import WorkoutPage from './workouts/page';
 
-const HomePage
- = () => {
+const HomePage = () => {
   return (
     <div>
-      <h2 className='text-4xl text-red-600'>HomePage </h2>
+      <Banner></Banner>
+      <WorkoutPage></WorkoutPage>
+      
     </div>
   );
 };
 
 export default HomePage
-;
+// ;
+// import Banner from '@/components/homepage/Banner';
+// import React from 'react';
+
+// const WorkoutPage = () => {
+//     return (
+//         <div>
+//             <h2>Workout page </h2>
+//             <Banner/>
+            
+//         </div>
+//     );
+// };
+
+// export default WorkoutPage;
