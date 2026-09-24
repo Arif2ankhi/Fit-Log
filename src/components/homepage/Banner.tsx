@@ -38,7 +38,7 @@ const Banner = () => {
 
           {/* Image */}
           <div className="relative flex rounded-2xl items-end justify-center px-6 md:min-h-[450px]">
-            <div className="absolute h-64 w-64 rounded-2xl mb-8 bg-blue-200/50 blur-3xl md:h-80 md:w-80" />
+            <div className="absolute h-64 w-64 rounded-2xl mb-8 bg-emerald-300/50 blur-3xl md:h-80 md:w-80" />
 
             <Image 
               src={bannerImg}

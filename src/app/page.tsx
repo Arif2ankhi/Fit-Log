@@ -1,12 +1,12 @@
 import Banner from '@/components/homepage/Banner';
 import React from 'react';
-import WorkoutPage from './workouts/page';
+import Workouts from './workouts/page';
 
 const HomePage = () => {
   return (
     <div>
       <Banner></Banner>
-      <WorkoutPage></WorkoutPage>
+      <Workouts></Workouts>
       
     </div>
   );
