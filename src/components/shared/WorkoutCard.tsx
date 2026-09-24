@@ -1,10 +1,13 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { CiClock1, CiStar } from 'react-icons/ci';
 import { TbFlameFilled } from 'react-icons/tb';
 // import { Clock, Flame, Star } from 'react-icons'
 
 const WorkoutCard = ({workout}) => {
     return (
+
+      <Link href={`/workouts/${workout.id}`} className="block group">
         <div className="w-full max-w-sm rounded-3xl bg-[#13151b] text-white p-4 shadow-xl border border-gray-800">
       {/* Top Image Section */}
       <div className="relative w-full h-52 rounded-2xl overflow-hidden mb-4">
@@ -60,6 +63,7 @@ const WorkoutCard = ({workout}) => {
         </div>
       </div>
     </div>
+    </Link>
     );
 };
 

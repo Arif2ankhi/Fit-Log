@@ -1,6 +1,5 @@
 
 import WorkoutCard from '@/components/shared/WorkoutCard';
-import Image from 'next/image';
 
 const getWorkouts = async () => {
   const res = await fetch('https://api.abcz.workers.dev/api/fitlog', { cache: 'no-store' });

@@ -2,6 +2,7 @@
 import Image from "next/image";
 import React from "react";
 import bannerImg from "@/assets/banner.png";
+import Link from "next/link";
 
 const Banner = () => {
   return (
@@ -15,25 +16,34 @@ const Banner = () => {
                WORKOUT LIBRARY
             </span>
 
-            <h2 className="text-xl font-bold leading-tight text-white md:text-3xl lg:text-4xl">
+            <h2 className="text-xl font-bold leading-tight text-white md:text-3xl lg:text-5xl">
               TRAIN WITH INTENT. LOG<br />
               EVERY SET.
               
               
             </h2>
 
-            <p className="mt-5 max-w-lg text-base leading-7 text-slate-600 md:text-lg">
-              Explore amazing books, discover new stories, and find your next
-              favourite read.
+            <p className="mt-5 max-w-lg text-base leading-7 text-white-600 md:text-lg">
+              FitLog is a dark, no-nonsense gym companion: pick a lift, lock it <br />
+              into today's plan, and watch the week's work add up.
             </p>
 
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-center md:justify-start">
+               <Link href ="/workouts">
+               
+               <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-center md:justify-start">
               <button className="btn btn-primary rounded-xl  px-7 shadow-md text-black font-bold bg-[#C2F800]">
                 BROWSE WORKOUTS
               </button>
 
               
             </div>
+               
+            </Link>
+               
+
+               
+               
+            
           </div>
 
           {/* Image */}
