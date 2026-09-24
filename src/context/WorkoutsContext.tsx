@@ -1,7 +1,8 @@
+'use client';
 import React, { createContext, useState } from 'react';
 
 
-const WorkoutsContext = createContext({});
+export const WorkoutsContext = createContext({});
 
 const WorkoutsProvider = ({children}) => {
 
@@ -17,8 +18,9 @@ const WorkoutsProvider = ({children}) => {
     }
 
     return (
-    <WorkoutsContext.Provider value = {shareData}>{children}
-
+    <WorkoutsContext.Provider value = {shareData}>
+        
+        {children}
 
     </WorkoutsContext.Provider>
     );
