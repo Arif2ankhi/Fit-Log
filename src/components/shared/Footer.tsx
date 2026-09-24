@@ -4,7 +4,7 @@ import React from 'react';
 
 const Footer = () => {
     return (
- <div className='container mx-auto'>
+ <div className='container mx-auto mt-8'>
     <footer className="footer sm:footer-horizontal footer-center bg-base-300 text-base-content p-4">
   <div className='flex justify-between gap-80'>
     
