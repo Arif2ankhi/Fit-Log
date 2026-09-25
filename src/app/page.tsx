@@ -12,19 +12,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage
-// ;
-// import Banner from '@/components/homepage/Banner';
-// import React from 'react';
-
-// const WorkoutPage = () => {
-//     return (
-//         <div>
-//             <h2>Workout page </h2>
-//             <Banner/>
-            
-//         </div>
-//     );
-// };
-
-// export default WorkoutPage;
+export default HomePage;

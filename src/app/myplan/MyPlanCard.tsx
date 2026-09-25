@@ -6,7 +6,6 @@ import { CiClock1 } from "react-icons/ci";
 import { TbFlameFilled } from "react-icons/tb";
 import { IoClose } from "react-icons/io5";
 import { FaCheck, FaRegStar } from "react-icons/fa";
-// import { IWorkout } from "./workout.type";
 import { IWorkout } from "@/types/workouts.type";
 
 interface PlanRowCardProps {
@@ -14,7 +13,6 @@ interface PlanRowCardProps {
   onDelete: (id: number) => void;
 }
 
-// const PlanRowCard = ({ workout, onDelete }) => {
 const PlanRowCard: React.FC<PlanRowCardProps> = ({ workout, onDelete }) => {
   const [isDone, setIsDone] = useState<boolean>(false);
 
@@ -26,7 +24,6 @@ const PlanRowCard: React.FC<PlanRowCardProps> = ({ workout, onDelete }) => {
           : "border-gray-800/80 hover:border-gray-700"
       }`}
     >
-      
       <div className="flex items-center gap-4 w-full md:w-auto">
         <div className="relative w-20 h-20 md:w-24 md:h-24 rounded-xl overflow-hidden flex-shrink-0 bg-gray-900">
           <Image
@@ -38,9 +35,8 @@ const PlanRowCard: React.FC<PlanRowCardProps> = ({ workout, onDelete }) => {
         </div>
 
         <div className="flex flex-col">
-          {/* Target Muscle Badges */}
           <div className="flex flex-wrap gap-1.5 mb-1.5">
-            {workout.muscleGroups?.map((group:string, idx:number) => (
+            {workout.muscleGroups?.map((group: string, idx: number) => (
               <span
                 key={idx}
                 className="bg-[#c2fd12] text-black text-[10px] font-black uppercase px-2 py-0.5 rounded-full"

@@ -1,7 +1,7 @@
-'use client';
-import React, { useContext } from 'react';
-import { WorkoutsContext, Workout } from '@/context/WorkoutsContext';
-import { Bookmark } from 'lucide-react';
+"use client";
+import React, { useContext } from "react";
+import { WorkoutsContext, Workout } from "@/context/WorkoutsContext";
+import { Bookmark } from "lucide-react";
 
 interface SaveForLaterButtonProps {
   workout: Workout;
