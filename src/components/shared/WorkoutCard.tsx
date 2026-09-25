@@ -12,7 +12,7 @@ interface WorkoutCardProps {
 const WorkoutCard: React.FC<WorkoutCardProps> = ({ workout }) => {
   return (
     <Link href={`/workouts/${workout.id}`} className="block group">
-      <div className="w-full max-w-sm rounded-3xl bg-[#13151b] text-white p-4 shadow-xl border border-gray-800">
+      <div className="w-full max-w-sm rounded-3xl bg-slate-800 text-white p-4 shadow-xl border border-gray-800 mb-4">
         <div className="relative w-full h-52 rounded-2xl overflow-hidden mb-4">
           <Image
             src={workout.image}

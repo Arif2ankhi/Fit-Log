@@ -43,7 +43,7 @@ const MyPlanPage = () => {
   const sortedList = sortWorkouts(currentList);
 
   return (
-    <div className="container mx-auto py-8 px-4 max-w-5xl">
+    <div className="container mx-auto py-8 px-4 ">
       <h2 className="text-white font-black text-3xl md:text-4xl uppercase tracking-wide mb-2">
         MY PLAN
       </h2>
@@ -51,7 +51,7 @@ const MyPlanPage = () => {
         Cap of five lifts for today. Finish them, then load more.
       </p>
 
-      <div className="grid grid-cols-3 text-center bg-[#13151b] border border-gray-800 rounded-2xl py-4 my-6 shadow-xl">
+      <div className="grid grid-cols-3 text-center bg-indigo-900 border border-gray-800 rounded-2xl py-8 my-6 shadow-xl">
         <div>
           <p className="text-gray-400 text-xs uppercase font-bold tracking-wider mb-1">
             Exercise
@@ -104,11 +104,12 @@ const MyPlanPage = () => {
         </div>
 
         {/* Sort By Section */}
-        <div className="text-center mb-6">
+        <div className=" text-center  gap-4 mb-6">
+          <p className="mb-2 font-bold">Sort by</p>
           <select
             value={sortBy}
             onChange={(e) => setSortBy(e.target.value as SortOption)}
-            className="select select-success text-white bg-[#13151b] border-gray-700 px-3 py-1.5 rounded-xl"
+            className="select select-success text-white bg-[#13151b] border-emerald-700 px-3 py-1.5 rounded-xl"
           >
             <option value="duration">Duration</option>
             <option value="calories">Calories</option>

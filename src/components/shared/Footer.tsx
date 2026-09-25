@@ -1,28 +1,29 @@
-import Image from 'next/image';
-import logo from '@/assets/logo.png'
 import React from 'react';
+import Image from 'next/image';
+import logo from '@/assets/logo.png';
 
-const Footer = () => {
-    return (
- <div className='container mx-auto mt-8'>
-    <footer className="footer sm:footer-horizontal footer-center bg-base-300 text-base-content p-4">
-  <div className='flex justify-between gap-80'>
-    
-    <div className='flex gap-2 items-center'>
-     
-    <Image src={logo} alt="logo of the app"/>
-    <span className='text-white  text-3xl font-bold mr-60'>FITLOG</span>
-    </div>
-    <div>
+export const Footer: React.FC = () => {
+  return (
+    <footer className="container mx-auto bg-gray-900 text-gray-400 py-6 px-4 sm:px-8 border-t border-gray-800">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
         
-    <p>Copyright © {new Date().getFullYear()} - All right reserved by Fit Log</p>
-    </div>
+       
+        <div className="flex items-center gap-2">
+          <Image src={logo} alt="FITLOG Logo" width={32} height={32} />
+         
+          <span className="text-xl font-bold tracking-wider text-white">
+            FITLOG
+          </span>
+        </div>
 
- 
-  </div>
-</footer>
- </div>
-    );
+        {/* Right Side: Copyright */}
+        <div className="text-sm text-center md:text-right">
+        © {new Date().getFullYear()} FITLOG. All rights reserved.
+        </div>
+
+      </div>
+    </footer>
+  );
 };
 
 export default Footer;

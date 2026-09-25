@@ -17,7 +17,7 @@ const Navbar = () => {
   );
 
   return (
-    <nav className="bg-base-100 shadow-sm border-b border-gray-800">
+    <nav className="bg-slate-950 shadow-sm border-b border-gray-800">
       <div className="navbar container mx-auto">
         <div className="navbar-start">
           <div className="dropdown">

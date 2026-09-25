@@ -8,7 +8,6 @@ const Banner = () => {
     <section className="px-4 py-8 md:px-8">
       <div className="container mx-auto overflow-hidden rounded-3xl bg-slate-600 via-blue-50 to-indigo-100 shadow-lg">
         <div className="grid min-h-[450px] items-center md:grid-cols-2">
-          {/* Content */}
           <div className="px-6 py-10 text-center md:px-12 md:text-left lg:px-16">
             <span className="text-[#c2f800]">WORKOUT LIBRARY</span>
 

@@ -18,7 +18,7 @@ const PlanRowCard: React.FC<PlanRowCardProps> = ({ workout, onDelete }) => {
 
   return (
     <div
-      className={`w-full bg-[#13151b] border rounded-2xl p-4 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 transition-all duration-200 ${
+      className={`w-full bg-slate-700 border rounded-2xl p-4 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 transition-all duration-200 ${
         isDone
           ? "border-green-500/50 bg-[#13151b]/70"
           : "border-gray-800/80 hover:border-gray-700"
@@ -29,8 +29,9 @@ const PlanRowCard: React.FC<PlanRowCardProps> = ({ workout, onDelete }) => {
           <Image
             src={workout.image}
             alt={workout.name}
-            fill
-            className="object-cover"
+            width={450}
+            height={500}
+            
           />
         </div>
 
@@ -92,7 +93,7 @@ const PlanRowCard: React.FC<PlanRowCardProps> = ({ workout, onDelete }) => {
 
         <button
           onClick={() => onDelete(workout.id as number)}
-          className="p-2 text-gray-400 hover:text-red-400 hover:bg-red-500/10 rounded-xl transition-colors cursor-pointer"
+          className="p-2 text-red-100 hover:text-red-400 hover:bg-red-500/10 rounded-xl transition-colors cursor-pointer"
           title="Remove item"
         >
           <IoClose className="w-5 h-5" />
