@@ -1,36 +1,27 @@
-
-'use client'
-import { WorkoutsContext } from '@/context/WorkoutsContext';
-import { Bookmark } from 'lucide-react';
+'use client';
 import React, { useContext } from 'react';
-import { toast } from 'react-toastify';
+import { WorkoutsContext, Workout } from '@/context/WorkoutsContext';
+import { Bookmark } from 'lucide-react';
 
-const SaveForLaterButton = ({workout}) => {
+interface SaveForLaterButtonProps {
+  workout: Workout;
+}
 
-     const {saveForLater, setSaveForLater,} = useContext(WorkoutsContext);
-    
-        // console.log(workoutsProvider, 'workoutsProvider');
-    
-        const handleSaveForLater = ()=> {
-    
-            console.log('Save for later  button triggered', workout);
-    
-            setSaveForLater([...saveForLater, workout]);
-            toast.success(`You have saved  "${workout.name}" for later`);
-    
-        }
-    
-    return (
-        <div>
-            <button className="flex-1 bg-[#1a1d26] hover:bg-[#222632]
-             text-white font-medium text-xs py-3.5 px-4 rounded-xl
-              border border-gray-700/80 flex items-center justify-center
-               gap-2 transition-colors" onClick={()=> handleSaveForLater()}>
-                <Bookmark className="w-4 h-4" />
-                Save for later
-              </button>
-        </div>
-    );
+const SaveForLaterButton: React.FC<SaveForLaterButtonProps> = ({ workout }) => {
+  const { handleSaveForLater } = useContext(WorkoutsContext);
+
+  return (
+    <div className="flex-1">
+      <button
+        type="button"
+        onClick={() => handleSaveForLater(workout)}
+        className="w-full bg-[#1a1d26] hover:bg-[#222632] text-white font-medium text-xs py-3.5 px-4 rounded-xl border border-gray-700/80 flex items-center justify-center gap-2 transition-colors cursor-pointer"
+      >
+        <Bookmark className="w-4 h-4" />
+        Save for later
+      </button>
+    </div>
+  );
 };
 
 export default SaveForLaterButton;
