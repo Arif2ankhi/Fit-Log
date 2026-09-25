@@ -1,5 +1,6 @@
 
 import WorkoutCard from '@/components/shared/WorkoutCard';
+import { IWorkout } from '@/types/workouts.type';
 
 const getWorkouts = async () => {
   const res = await fetch('https://api.abcz.workers.dev/api/fitlog', { cache: 'no-store' });
@@ -17,7 +18,7 @@ const Workouts = async () => {
         <p className='text-gray-400 font-normal mb-2'>Twelve lifts covering every major muscle group.</p>
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        {workoutsData.map((workout, id) => {
+        {workoutsData.map((workout: IWorkout, id:number) => {
             return <WorkoutCard key={workout.id} workout ={workout}/> 
             
 })}
