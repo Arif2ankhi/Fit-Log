@@ -4,7 +4,7 @@ import logo from '@/assets/logo.png';
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="container mx-auto bg-gray-900 text-gray-400 py-6 px-4 sm:px-8 border-t border-gray-800">
+    <footer className="container mx-auto bg-gray-900 text-gray-400 py-6 px-4 sm:px-8 border-t border-gray-800 mb-8">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
         
        
@@ -17,7 +17,7 @@ export const Footer: React.FC = () => {
         </div>
 
         <div className="text-sm text-center md:text-right">
-        © {new Date().getFullYear()} FITLOG. All rights reserved.
+        © {new Date().getFullYear()} FITLOG  Workout Library. Train hard, log honest.
         </div>
 
       </div>
