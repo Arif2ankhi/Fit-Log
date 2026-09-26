@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 import { CiClock1, CiStar } from "react-icons/ci";
 import { TbFlameFilled } from "react-icons/tb";
-import { IWorkout } from "@/types/workouts.type"; // Adjust path if needed
+import { IWorkout } from "@/types/workouts.type"; 
 
 interface WorkoutCardProps {
   workout: IWorkout;

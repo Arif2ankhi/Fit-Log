@@ -16,7 +16,6 @@ export const Footer: React.FC = () => {
           </span>
         </div>
 
-        {/* Right Side: Copyright */}
         <div className="text-sm text-center md:text-right">
         © {new Date().getFullYear()} FITLOG. All rights reserved.
         </div>

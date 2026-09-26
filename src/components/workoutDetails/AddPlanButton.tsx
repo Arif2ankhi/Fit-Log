@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useContext } from "react";
 import { WorkoutsContext, Workout } from "@/context/WorkoutsContext";
 import { MdAddchart } from "react-icons/md";

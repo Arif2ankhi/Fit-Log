@@ -6,6 +6,7 @@ import Footer from "@/components/shared/Footer";
 import { ToastContainer } from "react-toastify";
 import WorkoutsProvider from "@/context/WorkoutsContext";
 
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"]

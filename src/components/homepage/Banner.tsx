@@ -24,6 +24,7 @@ const Banner = () => {
             </p>
 
             <Link href="/workouts">
+           
               <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-center md:justify-start">
                 <button className="btn btn-primary rounded-xl  px-7 shadow-md text-black font-bold bg-[#C2F800]">
                   BROWSE WORKOUTS
